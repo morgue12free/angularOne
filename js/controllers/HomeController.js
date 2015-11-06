@@ -1,20 +1,34 @@
-app.controller('HomeController', ['$scope', function($scope) {
-    $scope.photos = [
-      {
-      name: 'nice pic',
-      rating: 5
-     },
-      {
-       name: 'just great',
-       rating: 4
-     },
-     {
-       name: 'a super plce',
-       rating: 4
-     },
-     {
-       name: 'another nice pic',
-       rating: 4
-     }
-    ]; 
+/*app.controller('HomeController', ['$scope','stream',
+ function($scope, stream) {
+ 	stream.success(function(data){
+ 	 	$scope.datar = data;
+  });  
+}]); */
+
+app.controller('HomeController', ['$scope','stream', function($scope, stream) {
+    stream.then(function(data) {
+        $scope.datar = data;
+    });  
 }]);
+
+/*
+app.controller('HomeController', ['$scope','stream',
+ stream.then(function (res) {
+    $scope.datar = res;
+},function(err) {
+    // hande error
+})
+}]); 
+*/
+
+/*
+app.controller('HomeController', ['$scope','stream',
+ function($scope, stream) {
+    stream.get().success(function(response){
+        $scope.datar = response.data;
+  })
+  .error(function(data) {
+                    console.log('Error: ' + data);
+            });  
+}]);
+*/
