@@ -1,0 +1,17 @@
+ <div class="container">
+
+    <div class="detail" >  
+
+         <div id="row" style="margin-top:1%; height: 15%">
+         <a class="col-md-7 detail-title" ng-href="{{detail.link}}">{{detail.title}}</a>
+         <a class="col-md-4 return" href="/">Back</a>  
+         </div>
+         <div id="row" style="margin-top:1%; height: 10%"><a ng-href="https://www.flickr.com/photos/{{detail.author_id}}">{{detail.author}}</a>  |  published: {{detail.published | date}} </div>
+         <div id="row" style="margin-top:1%; height: 55%">
+           <div class="col-md-2 thumbnail"><img ng-src="{{detail.media.m}}"></div>
+           <div id="detail">{{detail.description}}</div>
+          </div>
+         <div id="row" style="margin-top:1%; height: 15%">Tags: {{detail.tags}}</div>      
+      
+      </div>
+    </div>

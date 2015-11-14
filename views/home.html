@@ -1,0 +1,15 @@
+<div class="container" ng-repeat="photo in photos.items"  >
+         <div class="photo">         
+          <div class="col-md-2" style=" max-height: 100%">
+            <img src="{{photo.media.m}}" style="width: 100px; height: 120px; padding: 5%; min-height:30px; min-width-30px ">     
+            </div>
+            <div class="col-md-8" style="height: 119px; width: 80%; float: right">
+             <div class="row" id="list-title"><a href="/photos/{{$index}}">{{photo.title}}</a></div>
+             <div  class="row"id="pub-date">Published:{{photo.published | date}}</div>
+             <div class="row" id="list-desc">
+             <a  href="https://www.flickr.com/photos/{{photo.author_id}}" id="author">{{photo.author}}</a>
+             <a id="view-link" href="photo.link">View on flickr</a>
+              </div>
+          </div>        
+      </div>
+    </div>
