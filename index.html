@@ -23,19 +23,30 @@
     <!-- Services -->
     <script src="js/services/stream.js"></script>
 
+    <!-- Directives -->
+    <script src="js/directives/WhenScrolled.js"></script>
+
   </head>
   <body ng-app="angularOne">
     <div class="header">
-      <div class="container">
-        <!--<h1>AngularOne</h1>-->
-        <nav class="navbar navbar-default navbar-fixed-top">
-      <!-- We use the fluid option here to avoid overriding the fixed width of a normal container within the narrow content columns. -->
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="/">flickApp</a>
-        </div>
-      </div>
-    </nav>  
+      <div class="container" >
+        <nav class="navbar navbar-default navbar-center">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <a class="navbar-brand" href="/">flickApp</a>
+              </div>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <form class="navbar-form navbar-left" role="search">
+                  <div class="form-group">
+                    <input type="text"  ng-model="nameFilter" class="form-control" placeholder="Start typing..." style="font-family: roboto; !important; font-weight: 300 !important;">
+                  </div>
+                </form>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
+          <h1 id="main-title">Flickr Public Feed</h1>
       </div>
     </div>
 
@@ -43,7 +54,7 @@
     
     <ng-view></ng-view>
  
-
+ 
     <div class="footer foot-text" align="center">
       <div class="container"> 
         <img src="http://www.icm2015.org/img/APPLE.png" width="150px" vertical-align="middle"/>
