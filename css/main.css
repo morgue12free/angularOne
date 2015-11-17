@@ -32,26 +32,6 @@ font-stretch: condensed !important;
 font-size: 1.5vw;
 }
 
-.subject {
-    width: 60%;
-}
-
-
-.from {
-    font-size: 16px;
-    font-weight: 700;
-    padding-left: 2%;
-    width: 20%;
-}
-
-.date {
-    font-size: 14px;
-    padding-right: 2%;
-    text-align: right;
-    overflow: ellipsis;
-    width: 15%;
-}
-
 a.back {
     background: #ffbd1a;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -70,6 +50,7 @@ a.back {
   margin-top: 0%;
   margin-bottom: 2%;
 }
+
 .header {
   margin: 0;
   padding: 0;
