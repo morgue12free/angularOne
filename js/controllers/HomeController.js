@@ -7,11 +7,4 @@ app.controller('HomeController',['$scope','stream', function($scope, stream) {
       });  
         //show more functionality
 
-       $scope.showMoreItems = function(data) {
-         $scope.photos = $scope.photos + data;
-         $route.reload();
-           $scope.photos = $scope.photos.push(data);
-       }; 
-
-
 }]);
